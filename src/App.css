@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&display=swap");
+
+/* Page Reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Oranienbaum", serif;
+  font-weight: 500;
+} */
+
+/* Colors usings */
+
+/* :root {
+  --fondo-crema: #ded6c1;
+  --base-blanco: #fff;
+  --base-negro: #1e1e1f;
+  --toque-de-color: #f127dd;
+} */
+
+/* .logo {
+  height: 4em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--toque-de-color));
+}
+.iconFooter {
+  width: 16px;
+  margin: 5px 15px 5px 15px;
+} */

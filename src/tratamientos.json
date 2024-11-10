@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Limpieza facial profunda",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": ""
+    },
+    {
+        "name": "Peeling",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": ""
+    },
+    {
+        "name": "Hilos cosméticos",
+        "description":"",
+        "group": "Faciales",
+        "sub-group": ""
+    },
+    {
+        "name": "BB Glow",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": ""
+    },
+    {
+        "name": "Punta de diamantes",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": "Aparatología"
+    },
+    {
+        "name": "Dermaplaning",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": "Aparatología"
+    },
+    {
+        "name": "Radiofrecuencia",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": "Aparatología"
+    },
+    {
+        "name": "Máscara fototerapia led",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": "Aparatología"
+    },
+    {
+        "name": "Dermapen",
+        "description": "",
+        "group": "Faciales",
+        "sub-group": "Aparatología"
+    },
+    {
+        "name": "Diseño y perfilado",
+        "description": "",
+        "group": "Cejas",
+        "sub-group": ""
+    },
+    {
+        "name": "Laminado",
+        "description": "",
+        "group": "Cejas",
+        "sub-group": ""
+    },
+    {
+        "name": "Henna (incluye perfilado)",
+        "description": "",
+        "group": "Cejas",
+        "sub-group": ""
+    },
+    {
+        "name": "Microblanding",
+        "description": "",
+        "group": "Cejas",
+        "sub-group": ""
+    },
+    {
+        "name": "Remoción química",
+        "description": "",
+        "group": "Cejas",
+        "sub-group": ""
+    },
+    {
+        "name": "Lifting de pestañas",
+        "description": "",
+        "group": "Pestañas",
+        "sub-group": ""
+    },
+    {
+        "name": "Extensión pelo a pelo",
+        "description": "",
+        "group": "Pestañas",
+        "sub-group": ""
+    },
+    {
+        "name": "Volumen brasileño con fibras tecnológicas",
+        "description": "",
+        "group": "Pestañas",
+        "sub-group": ""
+    },
+    {
+        "name": "BB Lips",
+        "description": "",
+        "group": "Labios",
+        "sub-group": ""
+    },
+    {
+        "name": "HidraGloss",
+        "description": "",
+        "group": "Labios",
+        "sub-group": ""
+    },
+    {
+        "name": "Micropigmentación",
+        "description": "",
+        "group": "Labios",
+        "sub-group": ""
+    }
+]
