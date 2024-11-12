@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&display=swap");
 
 /* Page Reset */
-/* * {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,7 +10,7 @@
   vertical-align: baseline;
   font-family: "Oranienbaum", serif;
   font-weight: 500;
-} */
+}
 
 /* Colors usings */
 
@@ -29,8 +29,8 @@
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--toque-de-color));
-}
+}*/
 .iconFooter {
   width: 16px;
   margin: 5px 15px 5px 15px;
-} */
+}

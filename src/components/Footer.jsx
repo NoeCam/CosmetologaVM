@@ -6,10 +6,10 @@ import iconMail from "../assets/icon-Mail.svg";
 export const Footer = () => {
   return (
     <>
-      <footer>
-        <section>
+      <footer className="flex flex-col">
+        <section className="flex justify-center">
           <p>© 2024 - Cosmetóloga Valery Miranda</p>
-          <ul>
+          <ul className="flex flex-row justify-center">
             <li>
               <a href="" target="_blank">
                 <img src={iconMap} alt="icon Map" className="iconFooter" />
@@ -47,7 +47,7 @@ export const Footer = () => {
             </li>
           </ul>
         </section>
-        <p>
+        <p className="text-center mt-3">
           Desarrollado por{" "}
           <a
             href="https://www.linkedin.com/in/noelia-camelia-acosta/"
