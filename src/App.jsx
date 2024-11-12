@@ -8,15 +8,16 @@ import Services from "./pages/Services.jsx";
 import Contact from "./pages/Contact.jsx";
 import { Footer } from "./components/Footer.jsx";
 import LogoCompany from "./components/LogoCompany.jsx";
+import Button from "./components/Button.jsx";
 
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
-      <header>
-        <NavBar />
+      <header className="p-4">
         <LogoCompany />
+        <NavBar />
       </header>
       <main className="flex-grow">
         <Routes>
@@ -25,6 +26,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Button text="probando-boton" />
+        <Button text="otro-boton" />
       </main>
       <Footer />
     </>

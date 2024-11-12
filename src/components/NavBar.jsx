@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand navbar-light bg-light">
+    <nav className="navbar navbar-expand navbar-light bg-light flex flex-row justify-end">
       <ul className="navbar-nav">
         <li className="nav-item">
           <NavLink to="/" className="nav-link">
