@@ -7,7 +7,6 @@ import NavBar from "./components/NavBar.jsx";
 import Services from "./pages/Services.jsx";
 import Contact from "./pages/Contact.jsx";
 import { Footer } from "./components/Footer.jsx";
-import LogoCompany from "./components/LogoCompany.jsx";
 import Button from "./components/Button.jsx";
 
 function App() {
@@ -15,10 +14,8 @@ function App() {
 
   return (
     <>
-      <header className="p-4">
-        <LogoCompany />
-        <NavBar />
-      </header>
+      <NavBar />
+
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />

@@ -7,8 +7,8 @@ export const Footer = () => {
   return (
     <>
       <footer className="flex flex-col">
-        <section className="flex justify-center">
-          <p>© 2024 - Cosmetóloga Valery Miranda</p>
+        <section className="flex justify-center text-sm">
+          <p className="mr-3">© 2024 - Cosmetóloga Valery Miranda</p>
           <ul className="flex flex-row justify-center">
             <li>
               <a href="" target="_blank">
@@ -47,12 +47,13 @@ export const Footer = () => {
             </li>
           </ul>
         </section>
-        <p className="text-center mt-3">
+        <p className="text-center mt-3 text-xs">
           Desarrollado por{" "}
           <a
             href="https://www.linkedin.com/in/noelia-camelia-acosta/"
             target="_blank"
             alt="enlace al perfil de linkedIn de Noelia Camelia Acosta"
+            className="text-zinc-600"
           >
             Noelia Camelia Acosta
           </a>

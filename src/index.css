@@ -6,4 +6,8 @@
   .btn {
     @apply px-1 bg-slate-700 rounded-md;
   }
+
+  .iconFooter {
+    @apply w-4 ml-3;
+  }
 }
