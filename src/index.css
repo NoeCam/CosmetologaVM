@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 @layer components {
+  .icon-NavBar {
+    @apply w-5;
+  }
+
+  .text-NavBar {
+    @apply hidden md:block hover:bg-slate-600 hover:text-white px-10 py-1;
+  }
+
   .btn {
-    @apply px-1 bg-slate-700 rounded-md;
+    @apply px-1 bg-slate-600 rounded-md m-4;
   }
 
   .iconFooter {
     @apply w-4 ml-3;
+  }
+
+  .logo {
+    @apply h-10 p-0.5;
   }
 }

@@ -6,7 +6,7 @@ import iconMail from "../assets/icon-Mail.svg";
 export const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col">
+      <footer className="flex-col hidden md:block">
         <section className="flex justify-center text-sm">
           <p className="mr-3">© 2024 - Cosmetóloga Valery Miranda</p>
           <ul className="flex flex-row justify-center">
