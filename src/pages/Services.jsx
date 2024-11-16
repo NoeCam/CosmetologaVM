@@ -1,5 +1,11 @@
+import Tratamientos from "../components/Tratamientos.jsx";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <>
+      <Tratamientos />
+    </>
+  );
 };
 
 export default Services;

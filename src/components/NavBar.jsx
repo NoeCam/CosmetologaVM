@@ -4,7 +4,7 @@ import iconHome from "../assets/icon-Home.svg";
 
 const NavBar = () => {
   return (
-    <header className="p-4 flex justify-between items-center">
+    <header className="flex flex-col md:flex-row justify-between items-center">
       <LogoCompany />
 
       <nav className="navbar navbar-expand navbar-light bg-light flex fixed bottom-0 w-full md:static md:w-auto">

@@ -20,6 +20,6 @@
   }
 
   .logo {
-    @apply h-10 p-0.5;
+    @apply h-10 m-4;
   }
 }
