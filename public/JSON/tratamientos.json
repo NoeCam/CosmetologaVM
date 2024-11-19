@@ -42,7 +42,7 @@
     {
         "id": 6,
         "name": "Dermaplaning",
-        "description": "",
+        "description": "Es un método de exfoliación mecánica realizada con hoja bisirurí. El objetivo es eliminar células muertas de la capa más superficial de la piel. Y también elimina la pelusa del rostro (los cuales vuelven a crecer del mismo grosor que antes). Un mito muy escuchado : crecen más cantidad o más engrosados).  Esta técnica de exfoliación permite la penetración de activos posteriores ya que la piel queda más permeable. No duele! El resultado es notorio e inmediato! La piel queda más limpia tersa y suave. Piel de porcelana 😃 ¿Que estás esperando para agendarte y probar esta técnica?",
         "image": "",
         "group": "Faciales",
         "sub-group": "Aparatología"
@@ -98,7 +98,7 @@
     {
         "id": 13,
         "name": "Microblanding",
-        "description": "",
+        "description": "Este servicio trata de una técnica semipermanente de maquillaje de cejas. Crea un efecto natural imitando los vellos de las cejas, da forma y define las cejas. ¿Como se realiza? 👇🏼 Se utiliza una herramienta manual con pequeñas agujas para implantar pigmento en la capa superficial de la piel",
         "image": "",
         "group": "Cejas",
         "sub-group": ""

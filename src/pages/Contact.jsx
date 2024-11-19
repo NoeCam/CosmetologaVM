@@ -1,4 +1,4 @@
-import workingPhoto from "../assets/Working.png";
+import workingPhoto from "../assets/ValeryMiranda/Working.png";
 
 const Contact = () => {
   return (
