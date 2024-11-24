@@ -9,11 +9,6 @@ import fotoRutina5 from "../assets/Advices/Rutina5.png";
 const Home = () => {
   return (
     <>
-      <Treatments treatmentGroup={"Faciales"} />
-      <Treatments treatmentGroup={"Cejas"} />
-      <Treatments treatmentGroup={"Pestañas"} />
-      <Treatments treatmentGroup={"Labios"} />
-
       <Carousel
         images={[
           { src: fotoRutina1, alt: "" },
@@ -23,6 +18,11 @@ const Home = () => {
           { src: fotoRutina5, alt: "" },
         ]}
       />
+
+      <Treatments treatmentGroup={"Faciales"} />
+      <Treatments treatmentGroup={"Cejas"} />
+      <Treatments treatmentGroup={"Pestañas"} />
+      <Treatments treatmentGroup={"Labios"} />
     </>
   );
 };

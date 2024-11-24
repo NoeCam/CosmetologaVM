@@ -56,7 +56,28 @@ const Treatments = ({ treatmentGroup }) => {
                 </li>
                 <li className="list-group-item">
                   <b>Imagen: </b>
-                  {treatment.image}
+                  {Array.isArray(treatment.images) ? (
+                    treatment.images.map((img, index) => (
+                      <div key={index}>
+                        <img
+                          src={img}
+                          alt={`Imagen ${index + 1} of ${treatment.name}`}
+                          style={{ width: "100%" }}
+                        />
+                      </div>
+                    ))
+                  ) : treatment.image ? (
+                    // Manejo para tratamientos que tienen una única imagen (ej. `image`)
+                    <div>
+                      <img
+                        src={treatment.image}
+                        alt={treatment.name}
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  ) : (
+                    <p>No hay imágenes disponibles</p>
+                  )}
                 </li>
               </ul>
             </div>
@@ -68,7 +89,7 @@ const Treatments = ({ treatmentGroup }) => {
         <Button
           text="Ver lista completa"
           onClick={() => setSeeAll(true)}
-          className="btn btn-success  mt-5"
+          className="btn btn-success mt-5"
         />
       )}
     </div>

@@ -3,7 +3,13 @@
         "id": 1,
         "name": "Limpieza facial profunda",
         "description": "",
-        "image": "",
+        "images": [
+            "../src/assets/News/PromoAmigas.png",
+            "../src/assets/Results/HIDRAGLOSS.png",
+            "../src/assets/Results/LAMINADO-DE-CEJAS.png",
+            "../src/assets/Results/MICROPIGMENTACION-MICROBLADING.png",
+            "../src/assets/Treatments/DERMAPLANING.PNG"
+        ],
         "group": "Faciales",
         "sub-group": ""
     },
@@ -11,7 +17,7 @@
         "id": 2,
         "name": "Peeling",
         "description": "",
-        "image": "",
+        "images": [],
         "group": "Faciales",
         "sub-group": ""
     },

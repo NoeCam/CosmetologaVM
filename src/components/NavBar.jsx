@@ -2,6 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import LogoCompany from "../components/LogoCompany.jsx";
 import iconHome from "../assets/icon-Home.svg";
+import iconAbout from "../assets/icon-about.svg";
+import iconMap from "../assets/icon-Map.svg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +13,7 @@ const NavBar = () => {
       <LogoCompany />
       <div className={isMenuOpen ? "showMenuNav" : "hideMenuNav"}>
         <div
-          className="absolute top-0 right-0 px-8 py-8"
+          className="top-0 right-0 px-8 py-8"
           onClick={() => setIsMenuOpen(false)}
         >
           <svg
@@ -28,18 +30,18 @@ const NavBar = () => {
           </svg>
         </div>
         <ul className="flex flex-col items-center justify-between min-h-[250px]">
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="my-8  uppercase">
             <a href="/about">About</a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className=" my-8  uppercase">
             <a href="/contact">Contact</a>
+          </li>
+          <li className=" my-8 uppercase">
+            <a href="/services">Services</a>
           </li>
         </ul>
       </div>
-      <nav className="navbar navbar-expand navbar-light bg-light flex fixed bottom-0 w-full md:static md:w-auto">
+      <nav className="bg-white navbar navbar-expand navbar-light bg-light flex fixed bottom-0 w-full md:static md:w-auto">
         <ul className="navbar-nav flex justify-around w-full md:w-auto">
           <li className="nav-item flex flex-col items-center">
             <NavLink to="/" className="nav-link flex flex-col items-center">
@@ -59,7 +61,7 @@ const NavBar = () => {
             >
               <img
                 className="icon-NavBar sm:hidden"
-                src={iconHome}
+                src={iconAbout}
                 alt="About"
               />
               <p className="text-NavBar">About</p>
@@ -73,7 +75,7 @@ const NavBar = () => {
             >
               <img
                 className="icon-NavBar sm:hidden"
-                src={iconHome}
+                src={iconMap}
                 alt="Contact"
               />
               <p className="text-NavBar">Contact</p>
@@ -86,12 +88,12 @@ const NavBar = () => {
               className="nav-link flex flex-col items-center"
             >
               <div
-                className="HAMBURGER-ICON space-y-2"
+                className="HAMBURGER-ICON space-y-1.5 sm:hidden pt-1"
                 onClick={() => setIsMenuOpen((prev) => !prev)}
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                <span className="block h-0.5 w-7 bg-black"></span>
+                <span className="block h-0.5 w-7 bg-black"></span>
+                <span className="block h-0.5 w-7 bg-black"></span>
               </div>
               <p className="text-NavBar">Services</p>
             </NavLink>

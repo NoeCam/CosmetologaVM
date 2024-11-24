@@ -4,15 +4,15 @@
 
 @layer components {
   .icon-NavBar {
-    @apply w-5;
+    @apply w-7 mb-1.5;
   }
 
   .text-NavBar {
-    @apply hidden sm:block hover:bg-slate-600 hover:text-white px-10 py-1;
+    @apply hidden sm:block hover:text-rose-400 px-10 py-1  uppercase;
   }
 
   .btn {
-    @apply px-1 bg-slate-600 rounded-md m-4;
+    @apply bg-slate-900 text-white my-3 px-3 py-2 hover:bg-rose-400;
   }
 
   .iconFooter {
