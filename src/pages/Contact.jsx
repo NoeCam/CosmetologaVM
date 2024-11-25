@@ -6,7 +6,7 @@ import iconMap from "../assets/icon-Map.svg";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center">
+    <div className="flex flex-col md:flex-row items-center justify-center text-center">
       <img src={workingPhoto} alt="working Photo" className="mb-8" />
       <ul className="space-y-8">
         <li className="flex flex-col items-center">
