@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import Button from "../components/Button.jsx";
-import Carousel from "../components/Carousel.jsx";
+import Button from "./Button.jsx";
 
 // eslint-disable-next-line react/prop-types
-const Treatments = ({ treatmentGroup }) => {
+const ResumeTreatments = ({ treatmentGroup, showDescription = true }) => {
   const [treatments, setTreatments] = useState([]);
   const [seeAll, setSeeAll] = useState(false);
   const [error, setError] = useState(null);
@@ -21,7 +20,6 @@ const Treatments = ({ treatmentGroup }) => {
               (img) => new URL(img, import.meta.url).href
             ) || [],
         }));
-
         setTreatments(treatmentsWithImages);
       } catch (err) {
         setError(err);
@@ -43,29 +41,29 @@ const Treatments = ({ treatmentGroup }) => {
     : filteredTreatments.slice(0, 3);
 
   return (
-    <div className="flex flex-col justify-center max-w py-5 bg-slate-200">
+    <div className="mt-3 mb-5 mx-auto flex flex-col justify-center max-w py-5  bg-slate-200">
       <h2 className="text-center">{treatmentGroup}</h2>
-      <div className="row mb-5 overflow-x-auto">
+      <div className="row mb-5 flex flex-row gap-4 overflow-x-auto">
         {treatmentsToDisplay.map((treatment) => (
           <div key={treatment.id} className="col-md-3">
             <div className="card mt-5 px-4 py-2 bg-slate-400 rounded-md">
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  {treatment.images && treatment.images.length > 0 ? (
-                    <Carousel
-                      images={treatment.images.map((img, index) => ({
-                        src: img,
-                        alt: `Imagen ${index + 1} de ${treatment.name}`,
-                      }))}
-                    />
-                  ) : (
-                    <p>No hay imágenes disponibles</p>
+                  <h3 className="text-lg italic">{treatment.name}</h3>
+                  {showDescription && (
+                    <>
+                      <p className="text-sm">Descripción del tratamiento: </p>
+                      {treatment.description}
+                    </>
                   )}
                 </li>
                 <li className="list-group-item">
-                  <h3 className="text-lg italic">{treatment.name}</h3>
-                  <p className="text-sm">Descripción del tratamiento: </p>
-                  {treatment.description}
+                  <img
+                    src={treatment.images[0]}
+                    alt={`Image of ${treatment.name}`}
+                    style={{ width: "100%" }}
+                    className="rounded-md"
+                  />
                 </li>
               </ul>
             </div>
@@ -91,4 +89,4 @@ const Treatments = ({ treatmentGroup }) => {
   );
 };
 
-export default Treatments;
+export default ResumeTreatments;

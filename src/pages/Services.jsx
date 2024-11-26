@@ -3,10 +3,10 @@ import Treatments from "../components/Treatments.jsx";
 const Services = () => {
   return (
     <>
-      <Treatments treatmentGroup={"Faciales"} />
-      <Treatments treatmentGroup={"Cejas"} />
-      <Treatments treatmentGroup={"Pestañas"} />
-      <Treatments treatmentGroup={"Labios"} />
+      <Treatments treatmentGroup={"Faciales"} showDescription={true} />
+      <Treatments treatmentGroup={"Cejas"} showDescription={true} />
+      <Treatments treatmentGroup={"Pestañas"} showDescription={true} />
+      <Treatments treatmentGroup={"Labios"} showDescription={true} />
     </>
   );
 };

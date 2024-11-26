@@ -4,11 +4,11 @@
         "name": "Limpieza facial profunda",
         "description": "",
         "images": [
-            "../src/assets/News/PromoAmigas.png",
-            "../src/assets/Results/HIDRAGLOSS.png",
-            "../src/assets/Results/LAMINADO-DE-CEJAS.png",
-            "../src/assets/Results/MICROPIGMENTACION-MICROBLADING.png",
-            "../src/assets/Treatments/DERMAPLANING.PNG"
+            "../assets/News/PromoAmigas.png",
+            "../assets/Results/HIDRAGLOSS.png",
+            "../assets/Results/LAMINADO-DE-CEJAS.png",
+            "../assets/Results/MICROPIGMENTACION-MICROBLADING.png",
+            "../assets/Treatments/DERMAPLANING.PNG"
         ],
         "group": "Faciales",
         "sub-group": ""
@@ -17,7 +17,13 @@
         "id": 2,
         "name": "Peeling",
         "description": "",
-        "images": [],
+        "images": [
+            "../assets/Results/LAMINADO-DE-CEJAS.png",
+            "../assets/News/PromoAmigas.png",
+            "../assets/Results/HIDRAGLOSS.png",
+            "../assets/Results/LAMINADO-DE-CEJAS.png",
+            "../assets/Results/MICROPIGMENTACION-MICROBLADING.png"
+        ],
         "group": "Faciales",
         "sub-group": ""
     },
@@ -25,7 +31,9 @@
         "id": 3,
         "name": "Hilos cosméticos",
         "description":"",
-        "image": "",
+        "images": [
+            "../assets/Results/LAMINADO-DE-CEJAS.png"
+        ],
         "group": "Faciales",
         "sub-group": ""
     },
@@ -33,7 +41,7 @@
         "id": 4,
         "name": "BB Glow",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Faciales",
         "sub-group": ""
     },
@@ -41,7 +49,7 @@
         "id": 5,
         "name": "Punta de diamantes",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Faciales",
         "sub-group": "Aparatología"
     },
@@ -49,7 +57,7 @@
         "id": 6,
         "name": "Dermaplaning",
         "description": "Es un método de exfoliación mecánica realizada con hoja bisirurí. El objetivo es eliminar células muertas de la capa más superficial de la piel. Y también elimina la pelusa del rostro (los cuales vuelven a crecer del mismo grosor que antes). Un mito muy escuchado : crecen más cantidad o más engrosados).  Esta técnica de exfoliación permite la penetración de activos posteriores ya que la piel queda más permeable. No duele! El resultado es notorio e inmediato! La piel queda más limpia tersa y suave. Piel de porcelana 😃 ¿Que estás esperando para agendarte y probar esta técnica?",
-        "image": "",
+        "images": ["../assets/Treatments/Faciales/6-Dermaplaning/DERMAPLANING.png"],
         "group": "Faciales",
         "sub-group": "Aparatología"
     },
@@ -57,7 +65,7 @@
         "id": 7,
         "name": "Radiofrecuencia",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Faciales",
         "sub-group": "Aparatología"
     },
@@ -65,7 +73,7 @@
         "id": 8,
         "name": "Máscara fototerapia led",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Faciales",
         "sub-group": "Aparatología"
     },
@@ -73,7 +81,7 @@
         "id": 9,
         "name": "Dermapen",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Faciales",
         "sub-group": "Aparatología"
     },
@@ -81,7 +89,7 @@
         "id": 10,
         "name": "Diseño y perfilado",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Cejas",
         "sub-group": ""
     },
@@ -89,7 +97,7 @@
         "id": 11,
         "name": "Laminado",
         "description": "",
-        "image": "",
+        "images": ["../assets/Treatments/Cejas/2-Laminado/LAMINADO-DE-CEJAS.png"],
         "group": "Cejas",
         "sub-group": ""
     },
@@ -97,7 +105,7 @@
         "id": 12,
         "name": "Henna (incluye perfilado)",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Cejas",
         "sub-group": ""
     },
@@ -105,7 +113,7 @@
         "id": 13,
         "name": "Microblanding",
         "description": "Este servicio trata de una técnica semipermanente de maquillaje de cejas. Crea un efecto natural imitando los vellos de las cejas, da forma y define las cejas. ¿Como se realiza? 👇🏼 Se utiliza una herramienta manual con pequeñas agujas para implantar pigmento en la capa superficial de la piel",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Cejas",
         "sub-group": ""
     },
@@ -113,7 +121,7 @@
         "id": 14,
         "name": "Remoción química",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Cejas",
         "sub-group": ""
     },
@@ -121,7 +129,7 @@
         "id": 15,
         "name": "Lifting de pestañas",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Pestañas",
         "sub-group": ""
     },
@@ -129,7 +137,7 @@
         "id": 16,
         "name": "Extensión pelo a pelo",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Pestañas",
         "sub-group": ""
     },
@@ -137,7 +145,7 @@
         "id": 17,
         "name": "Volumen brasileño con fibras tecnológicas",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Pestañas",
         "sub-group": ""
     },
@@ -145,7 +153,7 @@
         "id": 18,
         "name": "BB Lips",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png"],
         "group": "Labios",
         "sub-group": ""
     },
@@ -153,7 +161,7 @@
         "id": 19,
         "name": "HidraGloss",
         "description": "",
-        "image": "",
+        "images": ["../assets/Treatments/Labios/2-HidraGloss/HIDRAGLOSS.png"],
         "group": "Labios",
         "sub-group": ""
     },
@@ -161,7 +169,12 @@
         "id": 20,
         "name": "Micropigmentación",
         "description": "",
-        "image": "",
+        "images": ["../assets/Results/LAMINADO-DE-CEJAS.png",
+            "../assets/News/PromoAmigas.png",
+            "../assets/Results/HIDRAGLOSS.png",
+            "../assets/Results/LAMINADO-DE-CEJAS.png",
+            "../assets/Results/MICROPIGMENTACION-MICROBLADING.png"
+        ],
         "group": "Labios",
         "sub-group": ""
     }
