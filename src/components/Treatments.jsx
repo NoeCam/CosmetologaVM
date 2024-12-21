@@ -44,11 +44,15 @@ const Treatments = ({ treatmentGroup }) => {
 
   return (
     <div className="flex flex-col justify-center max-w py-5 bg-slate-200">
-      <h2 className="text-center">{treatmentGroup}</h2>
+      <h2 className="text-center text-2xl mb-5">{treatmentGroup}</h2>
+
       <div className="row mb-5 overflow-x-auto">
         {treatmentsToDisplay.map((treatment) => (
           <div key={treatment.id} className="col-md-3">
-            <div className="card mt-5 px-4 py-2 bg-slate-400 rounded-md">
+            <div
+              id={treatment.name}
+              className="card my-5 px-4 py-2 bg-slate-400 rounded-md"
+            >
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   {treatment.images && treatment.images.length > 0 ? (
@@ -71,21 +75,17 @@ const Treatments = ({ treatmentGroup }) => {
             </div>
           </div>
         ))}
-
-        {seeAll ? null : (
-          <Button
-            text="Ver lista completa"
-            onClick={() => setSeeAll(true)}
-            className="btn btn-success mt-5"
-          />
-        )}
-        {seeAll && (
-          <Button
-            text="Ver menos entradas"
-            onClick={() => setSeeAll(false)}
-            className="btn btn-success mt-5"
-          />
-        )}
+        <div className="flex items-center justify-center">
+          {seeAll ? null : (
+            <Button text="Ver lista completa" onClick={() => setSeeAll(true)} />
+          )}
+          {seeAll && (
+            <Button
+              text="Ver menos entradas"
+              onClick={() => setSeeAll(false)}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

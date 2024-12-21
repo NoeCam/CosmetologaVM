@@ -1,11 +1,23 @@
-import { useState, useEffect } from "react";
-import Button from "./Button.jsx";
+import { useState, useEffect, useRef } from "react";
+import "../App.css";
 
 // eslint-disable-next-line react/prop-types
 const ResumeTreatments = ({ treatmentGroup, showDescription = true }) => {
   const [treatments, setTreatments] = useState([]);
-  const [seeAll, setSeeAll] = useState(false);
   const [error, setError] = useState(null);
+
+  const scrollRef = useRef(null);
+
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
+      scrollRef.current.scrollTo({
+        left: scrollLeft + scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   useEffect(() => {
     const cargarDatos = async () => {
@@ -36,54 +48,60 @@ const ResumeTreatments = ({ treatmentGroup, showDescription = true }) => {
     (treatment) => treatment.group === treatmentGroup
   );
 
-  const treatmentsToDisplay = seeAll
-    ? filteredTreatments
-    : filteredTreatments.slice(0, 3);
-
   return (
-    <div className="mt-3 mb-5 mx-auto flex flex-col justify-center max-w py-5  bg-slate-200">
-      <h2 className="text-center">{treatmentGroup}</h2>
-      <div className="row mb-5 flex flex-row gap-4 overflow-x-auto">
-        {treatmentsToDisplay.map((treatment) => (
-          <div key={treatment.id} className="col-md-3">
-            <div className="card mt-5 px-4 py-2 bg-slate-400 rounded-md">
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">
-                  <h3 className="text-lg italic">{treatment.name}</h3>
-                  {showDescription && (
-                    <>
-                      <p className="text-sm">Descripción del tratamiento: </p>
-                      {treatment.description}
-                    </>
-                  )}
-                </li>
-                <li className="list-group-item">
-                  <img
-                    src={treatment.images[0]}
-                    alt={`Image of ${treatment.name}`}
-                    style={{ width: "100%" }}
-                    className="rounded-md"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        ))}
+    <div className="relative mt-3 mb-10 mx-auto max-w pt-5 pb-14 bg-slate-100">
+      <h2 className="text-center text-2xl mb-5">{treatmentGroup}</h2>
 
-        {seeAll ? null : (
-          <Button
-            text="Ver lista completa"
-            onClick={() => setSeeAll(true)}
-            className="btn btn-success mt-5"
-          />
-        )}
-        {seeAll && (
-          <Button
-            text="Ver menos entradas"
-            onClick={() => setSeeAll(false)}
-            className="btn btn-success mt-5"
-          />
-        )}
+      <div
+        ref={scrollRef}
+        className="overflow-x-auto whitespace-nowrap scrollbar-hide flex items-center gap-4"
+      >
+        {filteredTreatments.map((treatment) => (
+          <a
+            href={`/services#${treatment.name}`}
+            key={treatment.id}
+            className="text-white"
+          >
+            <div className="inline-block">
+              <div
+                className="w-48 h-60 sm:w-64 sm:h-80 px-4 py-2 rounded-md bg-cover bg-center flex items-end"
+                style={{
+                  backgroundImage: `linear-gradient(to top, black, transparent), url(${treatment.images[0]})`,
+                }}
+                alt={`Image of ${treatment.name}`}
+              >
+                <ul>
+                  <li>
+                    <h3 className="text-md italic text-white">
+                      {treatment.name}
+                    </h3>
+                    {showDescription && (
+                      <>
+                        <p className="text-sm">Descripción del tratamiento: </p>
+                        {treatment.description}
+                      </>
+                    )}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div className="absolute right-0 flex space-x-2 p-2">
+        <button
+          className="w-10 h-10 rounded-full bg-gray-400 text-white flex items-center justify-center z-10"
+          onClick={() => handleScroll("left")}
+        >
+          &#8249;
+        </button>
+        <button
+          className="w-10 h-10 rounded-full bg-gray-400 text-white flex items-center justify-center z-10"
+          onClick={() => handleScroll("right")}
+        >
+          &#8250;
+        </button>
       </div>
     </div>
   );

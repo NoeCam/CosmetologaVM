@@ -3,16 +3,44 @@
 @tailwind utilities;
 
 @layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  blockquote,
+  li {
+    @apply text-gray-400;
+  }
+
+  .hover-text-shadow {
+    @apply transition duration-300;
+  }
+
+  .hover-text-shadow:hover {
+    text-shadow: 4px 4px 8px rgba(251, 113, 133, 0.8);
+  }
+
+  .hover-button-shadow:hover {
+    box-shadow: 4px 4px 8px rgba(251, 113, 133, 0.8);
+  }
+
   .icon-NavBar {
     @apply w-7 mb-1.5;
   }
 
   .text-NavBar {
-    @apply hidden sm:block hover:text-rose-400 px-10 py-1  uppercase;
+    @apply hidden sm:block px-10 py-1 hover-text-shadow uppercase;
   }
 
   .btn {
-    @apply bg-slate-900 text-white my-3 px-3 py-2 hover:bg-rose-400;
+    @apply bg-slate-900 text-white 
+    hover-button-shadow 
+    px-3 w-auto h-20 rounded-md;
   }
 
   .iconFooter {

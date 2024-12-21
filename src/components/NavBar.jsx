@@ -4,6 +4,7 @@ import LogoCompany from "../components/LogoCompany.jsx";
 import iconHome from "../assets/icon-Home.svg";
 import iconAbout from "../assets/icon-about.svg";
 import iconMap from "../assets/icon-Map.svg";
+import Title from "./Title.jsx";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const NavBar = () => {
   return (
     <header className="flex flex-col md:flex-row justify-between items-center">
       <LogoCompany />
+      <Title />
       <div className={isMenuOpen ? "showMenuNav" : "hideMenuNav"}>
         <div
           className="top-0 right-0 px-8 py-8"
@@ -41,12 +43,12 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-      <nav className="bg-white navbar navbar-expand navbar-light bg-light flex fixed bottom-0 w-full md:static md:w-auto">
+      <nav className=" pt-1 sm:pt-0 bg-white navbar navbar-expand navbar-light bg-light flex fixed bottom-0 w-full md:static md:w-auto">
         <ul className="navbar-nav flex justify-around w-full md:w-auto">
           <li className="nav-item flex flex-col items-center">
             <NavLink to="/" className="nav-link flex flex-col items-center">
               <img
-                className="icon-NavBar sm:hidden"
+                className="icon-NavBar sm:hidden "
                 src={iconHome}
                 alt="Home"
               />
