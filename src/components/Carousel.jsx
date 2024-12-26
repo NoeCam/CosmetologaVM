@@ -9,7 +9,7 @@ const Carousel = ({ images }) => {
       data-carousel="slide"
     >
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative h-56 overflow-hidden md:h-144">
+      <div className="relative h-72 overflow-hidden md:h-144">
         {images &&
           // eslint-disable-next-line react/prop-types
           images.map((image, index) => (
