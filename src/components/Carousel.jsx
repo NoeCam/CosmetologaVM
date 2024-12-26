@@ -5,11 +5,11 @@ const Carousel = ({ images }) => {
   return (
     <div
       id="default-carousel"
-      className="relative w-full"
+      className="relative w-full mb-10"
       data-carousel="slide"
     >
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <div className="relative h-56 overflow-hidden md:h-144">
         {images &&
           // eslint-disable-next-line react/prop-types
           images.map((image, index) => (

@@ -10,9 +10,11 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex flex-col md:flex-row justify-between items-center">
-      <LogoCompany />
-      <Title />
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex flex-col md:flex-row justify-between items-center">
+      <div className="flex items-center">
+        <LogoCompany />
+        <Title />
+      </div>
       <div className={isMenuOpen ? "showMenuNav" : "hideMenuNav"}>
         <div
           className="top-0 right-0 px-8 py-8"

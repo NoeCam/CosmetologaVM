@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        128: "32rem",
+        144: "36rem",
+      },
       keyframes: {
         shadowChange: {
           "0%": { textShadow: "0px 0px 0px rgba(251, 113, 133, 0.4)" },

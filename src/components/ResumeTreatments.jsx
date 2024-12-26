@@ -49,12 +49,15 @@ const ResumeTreatments = ({ treatmentGroup, showDescription = true }) => {
   );
 
   return (
-    <div className="relative mt-3 mb-10 mx-auto max-w pt-5 pb-14 bg-slate-100">
+    <div
+      className="relative mt-3 mb-10 mx-auto max-w pt-5 pb-14 
+    w-full xl:max-w-screen-xl xl:mx-auto "
+    >
       <h2 className="text-center text-2xl mb-5">{treatmentGroup}</h2>
 
       <div
         ref={scrollRef}
-        className="overflow-x-auto whitespace-nowrap scrollbar-hide flex items-center gap-4"
+        className=" overflow-x-auto whitespace-nowrap scrollbar-hide flex items-center gap-4"
       >
         {filteredTreatments.map((treatment) => (
           <a

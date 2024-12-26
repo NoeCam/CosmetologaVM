@@ -5,6 +5,7 @@ import fotoRutina3 from "../assets/Advices/rutina3.png";
 import fotoRutina4 from "../assets/Advices/rutina4.png";
 import fotoRutina5 from "../assets/Advices/Rutina5.png";
 import ResumeTreatments from "../components/ResumeTreatments.jsx";
+import Grid from "../components/Grid.jsx";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <ResumeTreatments treatmentGroup={"Cejas"} showDescription={false} />
       <ResumeTreatments treatmentGroup={"Pestañas"} showDescription={false} />
       <ResumeTreatments treatmentGroup={"Labios"} showDescription={false} />
+
+      <Grid />
     </>
   );
 };

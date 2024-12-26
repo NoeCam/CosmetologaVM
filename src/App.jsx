@@ -13,7 +13,7 @@ function App() {
     <>
       <NavBar />
 
-      <main className="flex-grow">
+      <main className="flex-grow md:mt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

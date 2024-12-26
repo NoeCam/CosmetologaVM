@@ -26,7 +26,7 @@
   }
 
   .hover-button-shadow:hover {
-    box-shadow: 4px 4px 8px rgba(251, 113, 133, 0.8);
+    box-shadow: 4px 4px 8px rgba(251, 113, 133, 0.5);
   }
 
   .icon-NavBar {
@@ -38,9 +38,9 @@
   }
 
   .btn {
-    @apply bg-slate-900 text-white 
+    @apply bg-gray-900 text-white 
     hover-button-shadow 
-    px-3 w-auto h-20 rounded-md;
+    px-3 w-auto h-20 rounded-md m-3;
   }
 
   .iconFooter {
